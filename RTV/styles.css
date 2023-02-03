@@ -1,0 +1,127 @@
+.head{
+    font: 35px Arial;
+    font-weight: Bold;
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+    background-color: skyblue; 
+  }
+  
+  .nav{
+    size: 1em;
+    background: yellow;
+    height: 45%;
+    width: 40%;
+    size: 1.5em;
+  }
+  
+  .form{
+    font: 1.5em Arial, sans serif, Mono;
+    padding: 3% 1%;
+    display: grid;
+    height: 15%;
+    width: 30%;
+    align-content: center;
+    justify-content: space-between;
+    grid-template-columns: auto auto;
+    
+  }
+  
+  
+  .button{
+    display: block;
+    height: 20px;
+    width: 15px;
+    text-align: center;
+    margin: 20 auto;
+    color: Green;
+   
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  .wilk{
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4B0082;
+    font-style: italic;
+  }
+
+  .banner {
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 2em;
+    Color: rgba(255, 229, 80, 0.904);
+    
+  }
+
+  .stuff{
+    text-align: center;
+    text-emphasis: Filled;
+    text-emphasis-style: ;
+    text-emphasis-color: aquamarine;
+
+  }
+
+  .play{
+    background-color: whitesmoke;
+    Color: Black;
+
+  }
+
+  .demo{
+    text-align: center;
+    color:#111;
+    padding:0em;
+    
+  }
