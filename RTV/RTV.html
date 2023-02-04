@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+
+<head><link rel = "stylesheet" href = yeah.css> 
+  <header class = "banner">Product Information Database System </header>  
+
+
+</head>
+<h1>
+    Greetings
+</h1>
+
+<p class="wilk">
+    *This page is still under construction but more will be available once the dust settles. Thank you for your understanding and patience.*
+</p>
+<body class = "play">
+    <p>
+        The intention of this page is to serve as a login for demonstrating the P.I.D.S. Over time I will continue to add functionality to this as I am able and I learn more.
+    </p>
+
+    <div class = stuff>
+<!-- Login section using PHP to act as security to prevent SQL injections as well as other injections attacks using restricitons; Here I am creating the
+class and rules for validating the form-->
+
+ <?php
+    $nameERR =();
+    $passERR = ();
+
+    if ($_Server["request_method"] == "POST")
+        {
+            if(empty($_Post["Username"])){$nameERR = "Username is Required";
+        } else{
+            $Username = test_input($_Post["Username"]);
+        }
+        function test_input($data) {
+            $data = trim($data);
+            $data = Stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+        }
+        
+    <p>
+    Hello, please login below to continue
+</p>
+
+</div>
+<div>
+    <!--This is the login form that requires username and password to go through a check and reference the above rules for security-->
+
+<p> <span class = "err"> *Required</span>
+</p>
+
+<form method ="post" action = "<?php echo htmlspecialchars($_SERVER[PHP_SELF"]);?>
+
+    UserName: <input type="text" name = "nameERR"><span class = "err">* Required</span> <br>
+    Password: <input type = "text" Name = "passERR"><span class="err">* Required</span>
+
+<?php
+    echo $username;
+    echo $password;
+    /?>
+
+</form>
+
+<p class = "demo">
+    Test link for once logged in - this is to be removed once on the server 
+    <a href = "NewRTV.html">Here</a>
+   </p>
+
+    
+
+
+    </body>
+</div>
+</html>
